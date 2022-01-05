@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #393E46;
+}
+p{
+    color: #EEEEEE;
+}
+header{
+    background-color: #222831;
+    height: 12rem;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 2px 10px 0px #222831;
+}
+header h1{
+    font-size: 3.4rem;
+    color: #EEEEEE;
+}
+header p{
+    font-size: 1.8rem;
+    color: #EEEEEE;
+}
+main{
+    background-color: #393E46;
+    min-height: 100vh;
+}
+.card-container{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+    grid-auto-rows: minmax(300px, 400px);
+    column-gap: 40px;
+    row-gap: 50px;
+    justify-content: center;
+}
+.card{
+    background-color: #222831;
+    box-shadow: 0px 0px 12px 0px #222831;
+    transition: transform 0.4s ease-out;
+}
+.add-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.add-card .add-title{
+    font-size: 2.4rem;
+    color: #EEEEEE;
+}
+.add-card .plus-symbol{
+    font-size: 8.4rem;
+    color: #EEEEEE;
+}
+.card:hover{
+    transform: scale(1.08);
+}
+.info-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.info-card .title{
+    font-size: 2.8rem;
+}
+.info-card .author{
+    font-size: 2.2rem;
+    padding-top: 10px;
+}
+label{
+    display: flex;
+}
+label p{
+    color: #EEEEEE;
+    font-size: 1.8rem;
+}
+#read{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    margin-right: 5px;
+}
+#read:checked{
+    background-color: #00ADB5;
+}
+footer{
+    margin-top: 40px;
+    background-color: #05888f;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 1.8rem;
+}
+.dim{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.addForm{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #222831;
+    max-width: 320px;
+    min-height: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+}
+.addForm .btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.addForm .input-text{
+    font-size: 1.8rem;
+    background-color: #393E46;
+    border: none;
+    color: #EEEEEE;
+    padding: 5px;
+    border-radius: 4px;
+}
+.addForm label{
+    font-size: 1.8rem;
+    color: #EEEEEE;
+}
+#alreadyRead{
+    margin-right: 10px;
+    width: 2rem;
+    height: 2rem;
+}
+.addForm button{
+    margin-top: 20px;
+    font-size: 1.8rem;
+    padding: 4px 15px;
+    margin: auto 10px;
+    background-color: #222831;
+    border-radius: 4px;
+    color: #EEEEEE;
+    transition: all 0.15s ease-out;
+}
+.exitButton{
+    border: 2px solid #9c1818;
+}
+.acceptButton{
+    border: 2px solid #189c18;
+}
+.acceptButton:hover{
+    background-color: #189c18;
+}
+.btnDelete{
+    font-size: 1.8rem;
+    background-color: #222831;
+    padding: 4px 15px;
+    border: 2px solid #9c1818;
+    color: #EEEEEE;
+    border-radius: 4px;
+    transition: all 0.15s ease-out;
+}
+.exitButton:hover,
+.btnDelete:hover{
+    background-color: #9c1818;
+}

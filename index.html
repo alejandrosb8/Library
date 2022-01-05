@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dim">
+        <div class="addForm">
+            <div class="btnContainer">
+                <input type="text" name="title" id="inputTitle" placeholder="Book's title" class="input-text">
+                <input type="text" name="author" id="inputAuthor" placeholder="Book's author" class="input-text">
+            </div>
+            <label><input type="checkbox" name="alreadyRead" id="alreadyRead"> Mark If It's Read</label>
+            <div>
+                <button class="exitButton" id="exitButton">Cancel</button>
+                <button class="acceptButton" id="acceptButton">Accept</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Library Project</h1>
+        <p>A book library manager</p>
+    </header>
+    <main>
+        <div class="card-container" id="card-container"></div>
+    </main>
+    <footer>
+        <p>Copyright © Alejandro Sanchez</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
